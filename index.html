@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perfil do Usuário</title>
+<title>Site de Venda de Ingressos - Página Principal</title>
 <style>
   body {
     background-color: orange;
@@ -18,88 +18,88 @@
     padding: 20px;
   }
   
-  .profile-info {
+  .show-card {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  }
-  
-  .profile-info h2 {
-    margin-top: 0;
-  }
-  
-  .profile-info p {
-    margin-bottom: 10px;
-  }
-  
-  .settings-section {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
   }
   
-  .settings-section h2 {
-    margin-top: 0;
-  }
-  
-  .settings-section label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .settings-section input[type="text"] {
+  .show-card img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    max-width: 300px; /* Tamanho máximo da imagem */
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
-  .settings-section input[type="submit"] {
+  .show-card h2 {
+    margin-top: 0;
+  }
+  
+  .show-card p {
+    margin-bottom: 10px;
+  }
+  
+  .buy-ticket-btn {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .settings-section input[type="submit"]:hover {
+  .buy-ticket-btn:hover {
     background-color: #555;
+  }
+  
+  .profile-icon {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .interactive-bar {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .interactive-bar-inner {
+    height: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: width 0.3s;
   }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="profile-info">
-    <h2>Perfil do Usuário</h2>
-    <img src="foto_perfil.jpg" alt="Foto de Perfil" width="150">
-    <p>Nome: Fulano de Tal</p>
-    <p>Email: fulano@example.com</p>
+  <div class="profile-icon">
+    <img src="icone_perfil.png" alt="Ícone de Perfil" width="40" height="40">
+  </div>
+  <div class="interactive-bar">
+    <div class="interactive-bar-inner" style="width: 50%;"></div>
+  </div>
+  <div class="show-card">
+    <img src="imagem_show1.jpg" alt="Show 1">
+    <h2>Show 1</h2>
+    <p>Data: 01 de Janeiro de 2025</p>
+    <p>Local: Local do Show 1</p>
+    <a href="detalhes_show1.html" class="buy-ticket-btn">Comprar Ingressos</a>
   </div>
   
-  <div class="settings-section">
-    <h2>Configurações</h2>
-    <form>
-      <label for="username">Nome de Usuário:</label>
-      <input type="text" id="username" name="username" value="Fulano123"><br>
-      
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" value="fulano@example.com"><br>
-      
-      <input type="submit" value="Salvar Configurações">
-    </form>
+  <div class="show-card">
+    <img src="imagem_show2.jpg" alt="Show 2">
+    <h2>Show 2</h2>
+    <p>Data: 15 de Fevereiro de 2025</p>
+    <p>Local: Local do Show 2</p>
+    <a href="detalhes_show2.html" class="buy-ticket-btn">Comprar Ingressos</a>
   </div>
   
-  <div class="settings-section">
-    <h2>Privacidade</h2>
-    <p>Aqui você pode configurar as suas preferências de privacidade.</p>
-    <!-- Adicione opções de privacidade conforme necessário -->
-  </div>
+  <!-- Adicione mais cartões de show conforme necessário -->
 </div>
 </body>
 </html>

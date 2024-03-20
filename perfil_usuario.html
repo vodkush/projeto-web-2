@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil do Usuário</title>
+<style>
+  body {
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2 {
+    margin-top: 0;
+  }
+  
+  .profile-info p {
+    margin-bottom: 10px;
+  }
+  
+  .settings-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .settings-section h2 {
+    margin-top: 0;
+  }
+  
+  .settings-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .settings-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .settings-section input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .settings-section input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="profile-info">
+    <h2>Perfil do Usuário</h2>
+    <img src="foto_perfil.jpg" alt="Foto de Perfil" width="150">
+    <p>Nome: Fulano de Tal</p>
+    <p>Email: fulano@example.com</p>
+  </div>
+  
+  <div class="settings-section">
+    <h2>Configurações</h2>
+    <form>
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username" value="Fulano123"><br>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" value="fulano@example.com"><br>
+      
+      <input type="submit" value="Salvar Configurações">
+    </form>
+  </div>
+  
+  <div class="settings-section">
+    <h2>Privacidade</h2>
+    <p>Aqui você pode configurar as suas preferências de privacidade.</p>
+    <!-- Adicione opções de privacidade conforme necessário -->
+  </div>
+</div>
+</body>
+</html>
